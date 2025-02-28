@@ -1,0 +1,1255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio - Kevin Gandhi</title>
+
+    <!-- bootstrap css cdn link  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <!-- custom css file -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="https://static.vecteezy.com/system/resources/thumbnails/019/166/318/small_2x/lion-head-lion-logo-symbol-gaming-logo-elegant-element-for-brand-abstract-symbols-vector.jpg" type="image/x-icon">
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- bootstrap icon cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+
+    <!-- for adding animation to website we have use AOS library 
+    AOS Library css file cdn link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- jquery cdn link  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- navbar starts -->
+    <nav
+      id="navbar-top"
+      class="navbar navbar-expand-lg navbar-light bg-white sticky-top"
+    >
+      <div class="container-fluid px-5">
+        <a class="navbar-brand fw-bold fs-2" href="#" style="color: #3f396d"
+          >Portfolio</a
+        >
+        <button
+          class="nav-menu d-md-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <i class="bi bi-menu-button-fill"></i>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav gap-4" style="font-size: 1.1rem">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#service">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#game">Game</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#clone">Clone</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#portfolio">Landing Page</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#e-commerce">E-Commerce</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonial">Testimonials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#blog">Theme Project</a>
+            </li>
+          </ul>
+        </div>
+        <button class="c-btn ms-4 py-2 px-4 rounded-pill d-none d-md-block">Contact</button>
+      </div>
+    </nav>
+    <!-- navbar ends here -->
+
+    <!-- home section starts  -->
+    <section class="home pt-5 pb-5" id="home">
+      <div class="row justify-content-evenly align-middle">
+        <!-- here data-aos is used for adding aos animation  -->
+        <div class="col-10 col-md-6 text-center text-md-start" data-aos="slide-right">
+          <h2 style="color: #3f396d">
+            Hello! I Am <br /><span class="c-orange">Kevin Gandhi</span>
+          </h2>
+          <p class="text-muted">
+            I am a passionate and dedicated frontend developer.With a strong foundation in web technologies such as HTML, CSS, JavaScript, and React.js, 
+            I am eager to contribute my skills to create engaging and user-friendly web applications.I am looking forward to the opportunity to bring my creativity and technical knowledge to your team. 
+            
+          </p>
+          <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill" onclick="showSurprise()">
+            Hire Me
+          </button>
+          <div id="surpriseModal" class="modal">
+            <div class="modal-content">
+                <h2>Thank You for Clicking!</h2>
+                <p>Let’s create something amazing together! 🎉</p>
+                <a href="Kevin.Gandhi Resume.pdf" target="_blank" class="download-btn">Download My Resume</a>
+                <button class="close-btn" onclick="closeModal()">Close</button>
+            </div>
+        </div>
+          <a href="" class="link ms-4 d-none">See My Work</a>
+        </div>
+        <div class="col-10 col-md-4 d-none d-md-block">
+          <img src="https://camo.githubusercontent.com/f151c26132ecde4de6f2cc63f288b20ebfb065536c1173fbfc3daa124cb77531/68747470733a2f2f7777772e736172646f6e79782e696e2f7468656d65732f696d616765732f736f6674776172652d646576656c6f706d656e742f736172646f6e79782d736f667477617265646576656c6f706d656e743030312e676966" class="img-fluid" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- home section ends here -->
+
+    <!-- expertise section starts -->
+    <section class="expertise mt-5" id="service">
+      <div class="heading text-center">
+        <small>My Expertise</small>
+        <h3>
+          Provide Wide Range of <br />
+          Digital Services
+        </h3>
+      </div>
+      <div class="row justify-content-evenly mt-5">
+        <div class="col-10 col-md-4" data-aos="fade-up">
+          <div class="service-card">
+            <div class="img">
+              <img
+                src="images/service-icon1.png"
+                class="w-25 img-fluid img"
+                alt=""
+              />
+            </div>
+            <div class="content mt-3">
+              <h4>Web Design</h4>
+              <p class="text-muted">
+                Crafting visually appealing and user-friendly interfaces adaptable to any device.
+              </p>
+              <a href="" class="link">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-10" data-aos="fade-up">
+          <div class="service-card">
+            <div class="img">
+              <img
+                src="images/service-icon2.png"
+                class="w-25 img-fluid img"
+                alt=""
+              />
+            </div>
+            <div class="content mt-3">
+              <h4>Frontend Development</h4>
+              <p class="text-muted">
+                Building robust web applications using HTML, CSS, JavaScript, and React.js.
+              </p>
+              <a href="" class="link">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-10" data-aos="fade-up">
+          <div class="service-card">
+            <div class="img">
+              <img
+                src="images/service-icon3.png"
+                class="w-25 img-fluid img"
+                alt=""
+              />
+            </div>
+            <div class="content mt-3">
+              <h4>Version Control</h4>
+              <p class="text-muted">
+                Managing code effectively using Git and GitHub.
+              </p>
+              <a href="" class="link">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- expertise section ends here -->
+
+    <!-- skill section starts -->
+    <section class="skill mt-5 py-5" id="about">
+      <div class="row justify-content-evenly">
+        <div class="col-10 col-md-5 skill-with-progress" data-aos="slide-right">
+          <div class="row justify-content-evenly">
+            <div class="col-10 col-md-6">
+              <div class="progress-card ms-3 ms-md-0">
+                <div class="circular-progress html-css">
+                  <span class="progress-value html-progress">0%</span>
+                </div>
+                <br />
+                <span class="text">HTML & CSS</span>
+              </div>
+            </div>
+            <div class="col-10 col-md-6 mt-4 mt-md-0">
+              <div class="progress-card ms-3 ms-md-0">
+                <div class="circular-progress javascript">
+                  <span class="progress-value javascript-progress">0%</span>
+                </div>
+                <br />
+                <span class="text">JavaScript</span>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-evenly mt-4">
+            <div class="col-10 col-md-6">
+              <div class="progress-card ms-3 ms-md-0">
+                <div class="circular-progress php">
+                  <span class="progress-value php-progress">0%</span>
+                </div>
+                <br />
+                <span class="text">PHP</span>
+              </div>
+            </div>
+            <div class="col-10 col-md-6 mt-4 mt-md-0">
+              <div class="progress-card ms-3  ms-md-0">
+                <div class="circular-progress reactjs">
+                  <span class="progress-value reactjs-progress">0%</span>
+                </div>
+                <br>
+                <span class="text">ReactJS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-10 col-md-5 skill-detail" data-aos="slide-left">
+          <div class="heading mt-5 mt-md-3">
+            <small>My Skills</small>
+            <h3>Beautiful & Unique Digital Experiences</h3>
+            <p class="text-muted">
+                I specialize in creating beautiful and unique digital experiences as a frontend developer. 
+                With a keen eye for design and attention to detail, I excel in building responsive, user-friendly, and interactive web applications.
+            </p>
+            <p class="text-muted">
+                I am passionate about learning and adapting to new technologies to deliver engaging digital solutions.
+            </p>
+            <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
+              <!-- here download attribute is used for adding download functionality to button  -->
+              <a
+                href="Kevin.Gandhi Resume.pdf"
+                download="SampleCV"
+                style="text-decoration: none;color: #fff;"
+                >Download CV</a
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- skill section end here -->
+
+    <!-- portfolio section starts here -->
+    <section class="portfolio" id="game">
+      <div class="heading text-center pt-5">
+        <small>Creative Work</small>
+        <h3>Check My Games</h3>
+      </div>
+
+      
+      <div class="portfolio-body">
+        <div class="row justify-content-evenly px-4">
+          <div class="post col-md-4 game all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img src="images/chess.png" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h4 class="card-title">Chess Game</h4>
+                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                <span class="badge bg-secondary badge-pill">JavaScript</span>
+                <span class="badge bg-secondary badge-pill mb-2">Game</span
+                ><br />
+                <a href="https://kevin-2810.github.io/Chess/" class="link">Play Game</a>
+              </div>
+            </div>
+          </div>
+          <div class="post col-md-4 website all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img
+                src="images/crossy-road.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-center">
+                <h4 class="card-title">Crossy-Road-Game</h4>
+                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                <span class="badge bg-secondary badge-pill">JavaScript</span>
+                <span class="badge bg-secondary badge-pill mb-2">Game</span
+                ><br />
+                <a href="https://kevin-2810.github.io/Crossy-Road-Game/" class="read-more-btn link">Play Game</a>
+              </div>
+            </div>
+          </div>
+          <div class="post col-md-4 webapp all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img src="images/blocks.png" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h4 class="card-title">Tower-Blocks</h4>
+                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                <span class="badge bg-secondary badge-pill">JavaScript</span>
+                <span class="badge bg-secondary badge-pill mb-2">Game</span
+                ><br />
+                <a href="https://kevin-2810.github.io/Tower-Blocks-Game/" class="read-more-btn link">Play Game</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-evenly mt-4 px-4">
+          <div class="post col-md-4 game all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img src="images/rabbitrun.png" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h4 class="card-title">Rabbit-Run</h4>
+                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                <span class="badge bg-secondary badge-pill">JavaScript</span>
+                <span class="badge bg-secondary badge-pill mb-2">Game</span
+                ><br />
+                <a href="https://kevin-2810.github.io/Rabbit-Run/" class="read-more-btn link">Play Game</a>
+              </div>
+            </div>
+          </div>
+          <div class="post col-md-4 website all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img src="images/tiktak.png" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h4 class="card-title">TicTacToe Game</h4>
+                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                <span class="badge bg-secondary badge-pill">JavaScript</span>
+                <span class="badge bg-secondary badge-pill mb-2">Game</span
+                ><br />
+                <a href="https://kevin-2810.github.io/Tik-Tac-Toe/" class="read-more-btn link">Play Game</a>
+              </div>
+            </div>
+          </div>
+          <div class="post col-md-4 all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img
+                src="images/bubble.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-center">
+                <h4 class="card-title">Bubble Game</h4>
+                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                <span class="badge bg-secondary badge-pill">JavaScript</span>
+                <span class="badge bg-secondary badge-pill mb-2">Game</span
+                ><br />
+                <a href="https://kevin-2810.github.io/Bubble-Game/" class="read-more-btn link">Play Game</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- portfolio section ends here -->
+    <section class="portfolio" id="clone">
+        <div class="heading text-center pt-5">
+          <small>Creative Work</small>
+          <h3>Check My Clones</h3>
+        </div>
+
+        <div class="portfolio-body">
+            <div class="row justify-content-evenly px-4">
+              <div class="post col-md-4 game all col-10 mt-3 mt-md-0" data-aos="fade-up">
+                <div class="card">
+                  <img src="images/netflix.png" class="card-img-top" alt="..." />
+                  <div class="card-body text-center">
+                    <h4 class="card-title">Netflix Clone</h4>
+                    <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                    <span class="badge bg-secondary badge-pill">JavaScript</span>
+                    <span class="badge bg-secondary badge-pill mb-2">Clone</span
+                    ><br />
+                    <a href="https://kevin-2810.github.io/Netflix-Clone/" class="read-more-btn link">Click Here</a>
+                  </div>
+                </div>
+              </div>
+              <div class="post col-md-4 website all col-10 mt-3 mt-md-0" data-aos="fade-up">
+                <div class="card">
+                  <img
+                    src="images/amazonclone.png"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body text-center">
+                    <h4 class="card-title">Amazon Clone</h4>
+                    <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                    <span class="badge bg-secondary badge-pill">JavaScript</span>
+                    <span class="badge bg-secondary badge-pill mb-2">Clone</span
+                    ><br />
+                    <a href="https://kevin-2810.github.io/Amazon-Clone/" class="read-more-btn link">Click Here</a>
+                  </div>
+                </div>
+              </div>
+              <div class="post col-md-4 webapp all col-10 mt-3 mt-md-0" data-aos="fade-up">
+                <div class="card">
+                  <img src="images/blinkit.png" class="card-img-top" alt="..." />
+                  <div class="card-body text-center">
+                    <h4 class="card-title">Blinkit Clone</h4>
+                    <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                    <span class="badge bg-secondary badge-pill">JavaScript</span>
+                    <span class="badge bg-secondary badge-pill mb-2">Clone</span
+                    ><br />
+                    <a href="https://kevin-2810.github.io/Blinkit-Clone/" class="read-more-btn link">Click Here</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-evenly mt-4 px-4">
+              <div class="post col-md-4 game all col-10 mt-3 mt-md-0" data-aos="fade-up">
+                <div class="card">
+                  <img src="images/instagram.png" class="card-img-top" alt="..." />
+                  <div class="card-body text-center">
+                    <h4 class="card-title">Instagram Clone</h4>
+                    <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                    <span class="badge bg-secondary badge-pill">JavaScript</span>
+                    <span class="badge bg-secondary badge-pill mb-2">Clone</span
+                    ><br />
+                    <a href="https://kevin-2810.github.io/Instagram-Clone/" class="read-more-btn link">Click Here</a>
+                  </div>
+                </div>
+              </div>
+              <div class="post col-md-4 website all col-10 mt-3 mt-md-0" data-aos="fade-up">
+                <div class="card">
+                  <img src="images/hotstar.png" class="card-img-top" alt="..." />
+                  <div class="card-body text-center">
+                    <h4 class="card-title">Hotstar Clone</h4>
+                    <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                    <span class="badge bg-secondary badge-pill">JavaScript</span>
+                    <span class="badge bg-secondary badge-pill mb-2">Clone</span
+                    ><br />
+                    <a href="https://kevin-2810.github.io/Hotstar-Clone/" class="read-more-btn link">Click Here</a>
+                  </div>
+                </div>
+              </div>
+              <div class="post col-md-4 all col-10 mt-3 mt-md-0" data-aos="fade-up">
+                <div class="card">
+                  <img
+                    src="images/youtube.png"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body text-center">
+                    <h4 class="card-title">Youtube Clone</h4>
+                    <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                    <span class="badge bg-secondary badge-pill">JavaScript</span>
+                    <span class="badge bg-secondary badge-pill mb-2">Clone</span
+                    ><br />
+                    <a href="https://kevin-2810.github.io/Youtube-Clone/" class="read-more-btn link">Click Here</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="portfolio" id="e-commerce">
+          <div class="heading text-center pt-5">
+            <small>Creative Work</small>
+            <h3>Check My E-Commerce Website</h3>
+          </div>
+  
+          <div class="portfolio-body">
+              <div class="row justify-content-evenly px-4">
+                <div class="post col-md-4 game all col-10 mt-3 mt-md-0" data-aos="fade-up">
+                  <div class="card">
+                    <img src="images/fashion.png" class="card-img-top" alt="..." />
+                    <div class="card-body text-center">
+                      <h4 class="card-title">Fashion Shop</h4>
+                      <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                      <span class="badge bg-secondary badge-pill">JavaScript</span>
+                      <span class="badge bg-secondary badge-pill mb-2">ReactJS</span
+                      ><br />
+                      <a href="https://quintuslabs.github.io/fashion-cube/" class="read-more-btn link">Click Here</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="post col-md-4 website all col-10 mt-3 mt-md-0" data-aos="fade-up">
+                  <div class="card">
+                    <img
+                      src="images/foodman.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body text-center">
+                      <h4 class="card-title">FoodMan </h4>
+                      <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                      <span class="badge bg-secondary badge-pill">JavaScript</span>
+                      <span class="badge bg-secondary badge-pill mb-2">ReactJS</span
+                      ><br />
+                      <a href="https://kevin-2810.github.io/FoodMan-E-commerce/" class="read-more-btn link">Click Here</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="post col-md-4 webapp all col-10 mt-3 mt-md-0" data-aos="fade-up">
+                  <div class="card">
+                    <img src="images/chips.png" class="card-img-top" alt="..." />
+                    <div class="card-body text-center">
+                      <h4 class="card-title">Responsive Chips Website</h4>
+                      <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                      <span class="badge bg-secondary badge-pill">JavaScript</span>
+                      
+                      <br />
+                      <a href="https://kevin-2810.github.io/Responsive-Chips-website/" class="read-more-btn link">Click Here</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-evenly mt-4 px-4">
+                <div class="post col-md-4 game all col-10 mt-3 mt-md-0" data-aos="fade-up">
+                  <div class="card">
+                    <img src="images/zwigato.png" class="card-img-top" alt="..." />
+                    <div class="card-body text-center">
+                      <h4 class="card-title">Zwigato</h4>
+                      <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                      <span class="badge bg-secondary badge-pill">JavaScript</span>
+                      <br />
+                      <a href="https://kevin-2810.github.io/Food-Website/" class="read-more-btn link">Click Here</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="post col-md-4 website all col-10 mt-3 mt-md-0" data-aos="fade-up">
+                  <div class="card">
+                    <img src="images/fruitkha.png" class="card-img-top" alt="..." />
+                    <div class="card-body text-center">
+                      <h4 class="card-title">Fruitkha</h4>
+                      <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                      <span class="badge bg-secondary badge-pill">JavaScript</span>
+                      <span class="badge bg-secondary badge-pill">PHP</span>
+                      <br />
+                      <a href="https://kevin-2810.github.io/Fruitkha/" class="read-more-btn link">Click Here</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="post col-md-4 all col-10 mt-3 mt-md-0" data-aos="fade-up">
+                  <div class="card">
+                    <img
+                      src="images/footwear.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body text-center">
+                      <h4 class="card-title">GenZ-Footwear</h4>
+                      <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                      <span class="badge bg-secondary badge-pill">JavaScript</span>
+                      <br />
+                      <a href="https://kevin-2810.github.io/GenZ-Footwear/" class="read-more-btn link">Click Here</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+        <section class="portfolio" id="portfolio">
+            <div class="heading text-center pt-5">
+              <small>Creative Work</small>
+              <h3>Check My Landing Page</h3>
+            </div>
+    
+            <div class="portfolio-body">
+                <div class="row justify-content-evenly px-4">
+                  <div class="post col-md-4 game all col-10 mt-3 mt-md-0" data-aos="fade-up">
+                    <div class="card">
+                      <img src="images/sport.png" class="card-img-top" alt="..." />
+                      <div class="card-body text-center">
+                        <h4 class="card-title">Sports Landing Page</h4>
+                        <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                        <span class="badge bg-secondary badge-pill">JavaScript</span>
+                        <span class="badge bg-secondary badge-pill mb-2">Portfolio</span
+                        ><br />
+                        <a href="https://kevin-2810.github.io/Sports-Portfolio/" class="read-more-btn link">Click Here</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="post col-md-4 website all col-10 mt-3 mt-md-0" data-aos="fade-up">
+                    <div class="card">
+                      <img
+                        src="images/pet.png"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-body text-center">
+                        <h4 class="card-title">Pet Landing Page</h4>
+                        <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                        <span class="badge bg-secondary badge-pill">JavaScript</span>
+                        <span class="badge bg-secondary badge-pill mb-2">Portfolio</span
+                        ><br />
+                        <a href="https://kevin-2810.github.io/Pet-Portfolio/" class="read-more-btn link">Click Here</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="post col-md-4 webapp all col-10 mt-3 mt-md-0" data-aos="fade-up">
+                    <div class="card">
+                      <img src="images/tesla.png" class="card-img-top" alt="..." />
+                      <div class="card-body text-center">
+                        <h4 class="card-title">Tesla</h4>
+                        <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                        <span class="badge bg-secondary badge-pill">JavaScript</span>
+                        
+                        <br />
+                        <a href="https://kevin-2810.github.io/Tesla/" class="read-more-btn link">Click Here</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row justify-content-evenly mt-4 px-4">
+                  <div class="post col-md-4 game all col-10 mt-3 mt-md-0" data-aos="fade-up">
+                    <div class="card">
+                      <img src="images/tourist.png" class="card-img-top" alt="..." />
+                      <div class="card-body text-center">
+                        <h4 class="card-title">Tourist24</h4>
+                        <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                        <span class="badge bg-secondary badge-pill">JavaScript</span>
+                        <br />
+                        <a href="https://kevin-2810.github.io/Tourist-Responsive-Website/" class="read-more-btn link">Click Here</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="post col-md-4 website all col-10 mt-3 mt-md-0" data-aos="fade-up">
+                    <div class="card">
+                      <img src="images/valorant.png" class="card-img-top" alt="..." />
+                      <div class="card-body text-center">
+                        <h4 class="card-title">Valorant Characters Landing Page</h4>
+                        <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                        <span class="badge bg-secondary badge-pill">JavaScript</span>
+                        <br />
+                        <a href="https://kevin-2810.github.io/Valorant-Characters/" class="read-more-btn link">Click Here</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="post col-md-4 all col-10 mt-3 mt-md-0" data-aos="fade-up">
+                    <div class="card">
+                      <img
+                        src="images/marvel.png"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-body text-center">
+                        <h4 class="card-title">Marvel Landing Page</h4>
+                        <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                        <span class="badge bg-secondary badge-pill">JavaScript</span>
+                        <br />
+                        <a href="https://kevin-2810.github.io/Marvel/" class="read-more-btn link">Click Here</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+    <!-- testimonial section starts  -->
+    <section class="testimonial mt-5 pt-5" id="testimonial">
+      <div class="row justify-content-evenly">
+        <div class="col-md-4 col-10" data-aos="slide-right">
+          <img src="images/tastimonials-img.png" class="img-fluid" alt="" />
+        </div>
+        <div class="col-md-6 col-10 mt-5" data-aos="slide-left">
+          <div class="heading">
+            <small>Testimonials</small>
+            <h3>Happy Supervisors Feedback</h3>
+            <!-- here we will use carousel element from bootstrap -->
+            <div
+              id="carouselExampleControls"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row justify-content-evenly">
+                    <div class="col-2 text-center">
+                      <i class="bi bi-quote"></i>
+                    </div>
+                    <div class="col-10">
+                      <p class="text-muted">
+                        "Working with Kevin was a seamless experience. Their attention to detail and ability to bring our design ideas to life were exceptional.
+                         They delivered a responsive and visually appealing interface that perfectly met our requirements."
+                      </p>
+                      <h4>Adarsh Patel</h4>
+                      <small class="fs-6 text-muted">CEO of Arth Consultancy Services</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row justify-content-evenly">
+                    <div class="col-2 text-center">
+                      <i class="bi bi-quote"></i>
+                    </div>
+                    <div class="col-10">
+                      <p class="text-muted">
+                        "Kevin demonstrated great enthusiasm and professionalism while working on our project. 
+                        Their technical skills in frontend development, combined with their dedication, ensured the timely delivery of a high-quality product."
+                      </p>
+                      <h4>Murtuza Zabuawala</h4>
+                      <small class="fs-6 text-muted">CEO of Amicii Infotech</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row justify-content-evenly">
+                    <div class="col-2 text-center">
+                      <i class="bi bi-quote"></i>
+                    </div>
+                    <div class="col-10">
+                      <p class="text-muted">
+                        "As a fresher, Kevin exceeded expectations by creating a user-friendly website that aligned with our vision.
+                         Their ability to learn and adapt quickly is truly commendable."
+                      </p>
+                      <h4>Viren Patel</h4>
+                      <small class="fs-6 text-muted">HOD of G.E.C.Dahod College</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="nextprev-btn rounded-pill prev-btn"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev"
+              >
+                <i class="bi bi-arrow-left-circle-fill prev"></i>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="nextprev-btn rounded-pill next-btn"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="next"
+              >
+                <i class="bi bi-arrow-right-circle-fill next"></i>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- testimonial ends here -->
+
+    <!-- blog section starts -->
+    <section class="blog mt-5 pb-5" id="blog">
+      <div class="heading text-center pt-5">
+        <small>Special Attraction</small>
+        <h3>Theme Projects</h3>
+      </div>
+      <div class="row justify-content-evenly px-4 mt-4" data-aos="fade-up">
+        <div class="blogpost col-md-4 col-10 mt-2 mt-md-0 game all">
+          <div class="card">
+            <img
+              src="images/3droom.png"
+              class="card-img-top rounded-4"
+              alt="..."
+            />
+            <div class="card-body px-4">
+              <small>For the Gamers </small
+              ><span class="ms-3">3D Gaming Room</span>
+              <h4 class="card-title">
+                <a href="">Welcome to the 3D Game Room</a>
+              </h4>
+              <p class="text-muted">
+                Designed with cutting-edge 3D rendering and interactive elements, our game room brings your favorite games to life like never before.
+              </p>
+              <a href="https://kevin-2810.github.io/3D-Game-Room/" class="read-more-btn link" >Click Here</a>
+            </div>
+          </div>
+        </div>
+        <div class="blogpost col-md-4 col-10 mt-5 mt-md-0 website all">
+          <div class="card">
+            <img
+              src="images/ff.png"
+              class="card-img-top rounded-4"
+              alt="..."
+            />
+            <div class="card-body px-4">
+              <small>For FreeFire Lovers</small
+              ><span class="ms-3">FreeFire Responsive Website</span>
+              <h4 class="card-title">
+                <a href="">Welcome to the Ultimate Free Fire</a>
+              </h4>
+              <p class="text-muted">
+                Dive into the world of Free Fire, the global sensation in battle royale gaming, with our fully responsive and feature-packed website.
+              </p>
+              <a href="https://kevin-2810.github.io/Free-Fire-Responsive-Website/" class="read-more-btn link" >Click Here</a>
+            </div>
+          </div>
+        </div>
+        <div class="blogpost col-md-4 col-10 mt-5 mt-md-0 webapp all">
+          <div class="card">
+            <img
+              src="images/iplauction.png"
+              class="card-img-top rounded-4"
+              alt="..."
+            />
+            <div class="card-body px-4">
+              <small>For Cricket Lovers</small
+              ><span class="ms-3">IPL Auction FunZone</span>
+              <h4 class="card-title">
+                <a href="">Welcome to the IPL Auction 2025</a>
+              </h4>
+              <p class="text-muted">
+                Whether you're a passionate cricket fan or a franchise enthusiast, our platform brings the excitement of IPL team auctions right to your screen.
+              </p>
+              <a href="https://kevin-2810.github.io/IPL-auction-Game/" class="read-more-btn link" >Click Here</a>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-evenly px-4 mt-4" data-aos="fade-up">
+            <div class="blogpost col-md-4 col-10 mt-2 mt-md-0 game all">
+              <div class="card">
+                <img
+                  src="images/music.png"
+                  class="card-img-top rounded-4"
+                  alt="..."
+                />
+                <div class="card-body px-4">
+                  <small>For the Music Lover </small
+                  ><span class="ms-3">Music Dashboard</span>
+                  <h4 class="card-title">
+                    <a href="">Welcome to the Music-Player</a>
+                  </h4>
+                  <p class="text-muted">
+                    Designed with cutting-edge 3D rendering and interactive elements, our game room brings your favorite games to life like never before.
+                  </p>
+                  <a href="https://kevin-2810.github.io/Music-Player/" class="read-more-btn link" >Click Here</a>
+                </div>
+              </div>
+            </div>
+            <div class="blogpost col-md-4 col-10 mt-5 mt-md-0 website all">
+              <div class="card">
+                <img
+                  src="images/Map.png"
+                  class="card-img-top rounded-4"
+                  alt="..."
+                />
+                <div class="card-body px-4">
+                  <small>For Geography Puzzle Lovers</small
+                  ><span class="ms-3">World Map Puzzle</span>
+                  <h4 class="card-title">
+                    <a href="">Welcome to the World Map Puzzle </a>
+                  </h4>
+                  <p class="text-muted">
+                    The World Map Puzzle is an engaging, interactive web-based project that allows users to explore and assemble a digital world map in 3D. 
+                  </p>
+                  <a href="https://mappuzzle.xyz/?map=world_borders" class="read-more-btn link" >Click Here</a>
+                </div>
+              </div>
+            </div>
+            <div class="blogpost col-md-4 col-10 mt-5 mt-md-0 webapp all">
+              <div class="card">
+                <img
+                  src="images/piono.png"
+                  class="card-img-top rounded-4"
+                  alt="..."
+                />
+                <div class="card-body px-4">
+                  <small>For Piono Lovers</small
+                  ><span class="ms-3">Piono</span>
+                  <h4 class="card-title">
+                    <a href="">Welcome to the Our Piono Player</a>
+                  </h4>
+                  <p class="text-muted">
+                    A dynamic and interactive piano application built using JavaScript. This project allows users to play piano notes using their keyboard or mouse, creating a fun and engaging experience for music lovers.
+                  </p>
+                  <a href="https://kevin-2810.github.io/Piono/" class="read-more-btn link" >Click Here</a>
+                </div>
+              </div>
+            </div>
+        <!-- here we will make modals if Read more link is clicked the modal will popup -->
+        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              
+                <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal"><i class="bi bi-x-circle-fill"></i></button>
+              
+              <div class="modal-body px-4">
+                <div class="img">
+                  <img src="images/2048game.png" class="img-fluid" alt="">
+                </div>
+                <div class="content mt-3">
+                  <small>By Pawan Kumavat</small
+                    ><span class="text-muted ms-2">Mar 8,2022</span>
+                  <h4 class="card-title mt-3">Quis autem vea eum iure reprehenderit</h4>
+                  <div class="social-links mt-4">
+                      <button href="" class="rounded-pill dribble">
+                        <i class="bi bi-dribbble"></i>
+                      </button>
+                      <button href="" class="rounded-pill whatsapp">
+                        <i class="bi bi-whatsapp"></i>
+                      </button>
+                      <button href="" class="rounded-pill behance">
+                        <i class="bi bi-behance"></i>
+                      </button>
+                  </div>
+                  <p class="text-muted mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor eros a tellus auctor, nec suscipit nunc dignissim. Ut suscipit gravida augue sed elementum. Sed sed luctus nisl. Donec scelerisque nisi in sodales mattis. Vestibulum suscipit odio ac enim blandit sollicitudin. Aliquam ultrices sem quis urna placerat interdum. Etiam rutrum, quam sagittis tristique mollis, libero arcu scelerisque erat, eget tincidunt eros diam quis nunc.</p>
+                </div>
+              </div>
+              <div class="heading px-2">
+                <h3 class="fs-3 ms-3">Leave A Comment</h3>
+              </div>
+              <div class="contact-form ms-3 mt-3 pb-4 px-2">
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Name"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="E-mail"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Mobile No."
+                  />
+                </div>
+                <div class="mb-3">
+                  <textarea
+                    class="form-control"
+                    id="exampleFormControlTextarea1"
+                    placeholder="Message"
+                    rows="5"
+                  ></textarea>
+                </div>
+                <button class="c-btn h-btn mt-3 py-2 px-4 rounded-pill">
+                  Submit
+                </button>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              
+                <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal"><i class="bi bi-x-circle-fill"></i></button>
+              
+              <div class="modal-body px-4">
+                <div class="img">
+                  <img src="images/currency-converter.png" class="img-fluid" alt="">
+                </div>
+                <div class="content mt-3">
+                  <small>By Pawan Kumavat</small
+                    ><span class="text-muted ms-2 ms-md-0">Mar 8,2022</span>
+                  <h4 class="card-title mt-3">Quis autem vea eum iure reprehenderit</h4>
+                  <div class="social-links mt-4">
+                      <button href="" class="rounded-pill dribble">
+                        <i class="bi bi-dribbble"></i>
+                      </button>
+                      <button href="" class="rounded-pill whatsapp">
+                        <i class="bi bi-whatsapp"></i>
+                      </button>
+                      <button href="" class="rounded-pill behance">
+                        <i class="bi bi-behance"></i>
+                      </button>
+                  </div>
+                  <p class="text-muted mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor eros a tellus auctor, nec suscipit nunc dignissim. Ut suscipit gravida augue sed elementum. Sed sed luctus nisl. Donec scelerisque nisi in sodales mattis. Vestibulum suscipit odio ac enim blandit sollicitudin. Aliquam ultrices sem quis urna placerat interdum. Etiam rutrum, quam sagittis tristique mollis, libero arcu scelerisque erat, eget tincidunt eros diam quis nunc.</p>
+                </div>
+              </div>
+              <div class="heading px-2">
+                <h3 class="fs-3 ms-3">Leave A Comment</h3>
+              </div>
+              <div class="contact-form ms-3 mt-3 pb-4 px-2">
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Name"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="E-mail"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Mobile No."
+                  />
+                </div>
+                <div class="mb-3">
+                  <textarea
+                    class="form-control"
+                    id="exampleFormControlTextarea1"
+                    placeholder="Message"
+                    rows="5"
+                  ></textarea>
+                </div>
+                <button class="c-btn h-btn mt-3 py-2 px-4 rounded-pill">
+                  Submit
+                </button>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              
+                <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal"><i class="bi bi-x-circle-fill"></i></button>
+              
+              <div class="modal-body px-4">
+                <div class="img">
+                  <img src="images/dictionary.png" class="img-fluid" alt="">
+                </div>
+                <div class="content mt-3">
+                  <small>By Pawan Kumavat</small
+                    ><span class="text-muted ms-2 ms-md-0">Mar 8,2022</span>
+                  <h4 class="card-title mt-3">Quis autem vea eum iure reprehenderit</h4>
+                  <div class="social-links mt-4">
+                      <button href="" class="rounded-pill dribble">
+                        <i class="bi bi-dribbble"></i>
+                      </button>
+                      <button href="" class="rounded-pill whatsapp">
+                        <i class="bi bi-whatsapp"></i>
+                      </button>
+                      <button href="" class="rounded-pill behance">
+                        <i class="bi bi-behance"></i>
+                      </button>
+                  </div>
+                  <p class="text-muted mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor eros a tellus auctor, nec suscipit nunc dignissim. Ut suscipit gravida augue sed elementum. Sed sed luctus nisl. Donec scelerisque nisi in sodales mattis. Vestibulum suscipit odio ac enim blandit sollicitudin. Aliquam ultrices sem quis urna placerat interdum. Etiam rutrum, quam sagittis tristique mollis, libero arcu scelerisque erat, eget tincidunt eros diam quis nunc.</p>
+                </div>
+              </div>
+              <div class="heading px-2">
+                <h3 class="fs-3 ms-3">Leave A Comment</h3>
+              </div>
+              <div class="contact-form ms-3 mt-3 pb-4 px-2">
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Name"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="E-mail"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Mobile No."
+                  />
+                </div>
+                <div class="mb-3">
+                  <textarea
+                    class="form-control"
+                    id="exampleFormControlTextarea1"
+                    placeholder="Message"
+                    rows="5"
+                  ></textarea>
+                </div>
+                <button class="c-btn h-btn mt-3 py-2 px-4 rounded-pill">
+                  Submit
+                </button>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- blog section ends here -->
+
+    <!-- contact section starts -->
+    <section class="contact py-5" id="contact">
+      <div class="heading text-center">
+        <small>Get in Touch</small>
+        <h3>Any Questions? Feel Free to Contact</h3>
+      </div>
+      <div class="row justify-content-evenly mt-5">
+        <div class="col-md-5 col-10 contact-details" data-aos="slide-right">
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-geo-alt-fill"></i>
+            </div>
+            <div class="col-11">
+              <p>110, K.C.Corporation Opp.,Vakhariya Bandar Road,Bilimora,Gujarat - 396321</p>
+            </div>
+          </div>
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-telephone-fill"></i>
+            </div>
+            <div class="col-11">
+              <p>+91 9016070264</p>
+            </div>
+          </div>
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-send-fill"></i>
+            </div>
+            <div class="col-11">
+              <p>gandhikevin28@gmail.com</p>
+            </div>
+          </div>
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-github"></i>
+            </div>
+            <div class="col-11">
+              <p>https://github.com/Kevin-2810/</p>
+            </div>
+          </div>
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-globe-americas"></i>
+            </div>
+            <div class="col-11">
+              <p>https://www.linkedin.com/in/kevin-gandhi-20410421b?utm_source=share&utm_campaign=share_via&</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 col-10 mt-3 mt-md-0" data-aos="slide-left">
+          <div class="contact-form">
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="Name"
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="E-mail"
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="Mobile No."
+              />
+            </div>
+            <div class="mb-3">
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                placeholder="Message"
+                rows="5"
+              ></textarea>
+            </div>
+            <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contact section ends here -->
+
+      <!-- now we will make back to top button when user click on it it will be redirected to top page  -->
+    <button
+      type="button"
+      class="btn btn-floating btn-lg rounded-pill"
+      id="btn-back-to-top"
+    >
+      <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- footer section starts  -->
+    <footer class="text-center text-muted py-4">
+      <h3 class="text-white pt-4" data-aos="fade-up">Portfolio</h3>
+      <div class="link-group mt-5" data-aos="fade-up">
+        <a href="#home">Home</a>
+        <div class="vr"></div>
+        <a href="#about">About</a>
+        <div class="vr"></div>
+        <a href="#service">Service</a>
+        <div class="vr"></div>
+        <a href="#testimonial">Testimonials</a>
+        <div class="vr"></div>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="social-links mt-5" data-aos="fade-up">
+        <button href="" class="rounded-pill dribble">
+          <i class="bi bi-instagram"></i>
+        </button>
+        <button href="" class="rounded-pill whatsapp">
+          <i class="bi bi-whatsapp"></i>
+        </button>
+        <button href="" class="rounded-pill behance">
+          <i class="bi bi-dribbble"></i>
+        </button>
+      </div>
+      <hr class="text-muted my-4" />
+
+      <p>Copyright 2025 Portfolio | All Rights Reserved.</p>
+    </footer>
+    <!-- footer section ends here -->
+
+      <!-- bootstrap javascript cdn link  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- AOS library javascript link  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      // initializing AOS library
+      AOS.init({
+        duration: 1000,
+        offset: 50,
+      });
+    </script>
+    <!-- custom js file linking -->
+    <script src="script.js"></script>
+    
+  </body>
+</html>
