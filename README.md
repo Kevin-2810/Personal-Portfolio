@@ -73,3 +73,6 @@ You can download my resume [here](Kevin.Gandhi%20Resume.pdf).
 1. Clone the repository:
    ```bash
    git clone https://github.com/Kevin-2810/Portfolio.git
+
+
+This README provides a comprehensive overview of your portfolio, including links to your projects, contact information, and instructions for running the project locally. You can customize it further as needed!
